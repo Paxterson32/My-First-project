@@ -12,13 +12,14 @@ char **Remplir_tableau(char**);
 int main()
 {
     char **tab;
-    //char tab[N][M];
+    
     int i;
     /*******************************construction du tableau a deux dimensions et remplissage************************************/
     tab = (char**)malloc(N*sizeof(char*));
     for(i=0;i<N;i++)
         tab[i] = (char*)malloc(M*sizeof(char));
-    //Remplissage
+        
+    //Remplissage du tableau
     tab = Remplir_tableau(tab);
     /**************************************************************************************************************************/
     /*****************************************************Traitement*******************************************************************/
